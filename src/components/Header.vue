@@ -1,7 +1,13 @@
-<template lang="html">
+<template>
 
   <section class="src-components-header">
-    <h1>src-components-header Component</h1>
+
+   <div id="header">
+      <h1>The Great <br>
+      <span id="colorDisplay">RGB</span>
+      <br>
+      Guessing Game</h1>
+   </div>
   </section>
 
 </template>
@@ -30,8 +36,26 @@
 
 </script>
 
-<style scoped lang="scss">
+<style scoped lang="css">
+
   .src-components-header {
+    transition: all 0.3s;
+    background: steelblue;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    color: white;
+  }
+
+  h1 {
+    font-weight: normal;
+    line-height: 1.1;
+    padding: 20px 0;
 
   }
+
+  #colorDisplay {
+    font-size: 200%;
+  }
+
 </style>
